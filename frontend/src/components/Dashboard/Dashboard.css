@@ -1,0 +1,14 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://i.pinimg.com/564x/4f/5e/8c/4f5e8c6dbb0abe540c53fdc730639406.jpg') center fixed no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.dashboard-body {
+    display: flex;
+    flex: 1; 
+}

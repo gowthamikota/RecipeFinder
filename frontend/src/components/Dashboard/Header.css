@@ -1,0 +1,68 @@
+/* Header.css */
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), #e4dedc53, rgba(255, 255, 255, 0.6)); /* Light blue gradient with transparency */
+    color: #333; /* Text color for better contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a deeper shadow for depth */
+    height:60px;
+   
+    width:100%;
+
+}
+nav{
+    width:50%;
+    margin-right: 300px;
+    /* font-size: small; */
+}
+.logo {
+    font-size: 28px; /* Increased font size for more impact */
+    font-weight: bold;
+    width: 25%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a more pronounced shadow for better readability */
+    letter-spacing: 1px; /* Slightly increase letter spacing for elegance */
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px; /* Increased gap for better spacing */
+}
+
+.nav-links a {
+    color: #333; /* Dark link color for better visibility */
+    text-decoration: none;
+    transition: color 0.3s;
+    /* More padding for better clickability */
+    border-radius: 5px; /* Slightly round the corners for a softer look */
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Color on hover */
+    text-decoration: underline; /* Add underline effect on hover */
+}
+
+.user-info {
+    margin-left: auto; /* Push user info to the right */
+    font-size: 16px;
+}
+
+.logout-button {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    color: #FF4500; /* Logout button color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Slightly wider for better usability */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    width:10%;
+}
+
+.logout-button:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly darker on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}

@@ -1,0 +1,71 @@
+/* AddRecipe.css */
+body{
+    background-image: url('https://i.pinimg.com/564x/4f/5e/8c/4f5e8c6dbb0abe540c53fdc730639406.jpg');
+    background-repeat: no-repeat;  /* Prevents the background image from repeating */
+    background-size: cover;        /* Scales the image to cover the entire element */
+    background-position: center;    /* Centers the background image */
+    background-attachment: fixed;   /* Fixes the background image in place */
+    
+}
+.add-recipe-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+    height:600px;
+}
+
+.add-body {
+    display: flex;
+    flex: 1 1; /* Allow it to grow */
+}
+
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical; /* Allows vertical resizing only */
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+.submit-button {
+    background-color: #FF4500; /* Your primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #e63900; /* A darker shade on hover */
+}

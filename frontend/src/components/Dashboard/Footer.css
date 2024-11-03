@@ -1,0 +1,9 @@
+.footer {
+    background-color: #6ab04c; /* Footer background color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* To align footer properly */
+    bottom: 0;
+    width: 100%;
+}

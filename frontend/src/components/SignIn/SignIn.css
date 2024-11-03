@@ -1,0 +1,124 @@
+/* SignIn.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import url( "https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" 
+);
+/* .signin-form{
+    background:white; 
+    border: 3px solid #f39c12;
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 420px;
+    animation: fadeInUp 0.8s ease; 
+} */
+.signin-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/236x/94/4f/a4/944fa48d9947de0fe9d3e428ec66e99e.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Overlay effect */
+/* .signin-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); 
+} */
+
+.signin-header {
+    text-align: center;
+    color: #ffb347; /* Warm amber color */
+    font-family: 'Pacifico', cursive; /* Adds a fun, inviting style */
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.signin-form {
+    background:white; /* Soft light yellow background */
+    border: 3px solid #f39c12;
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 420px;
+    animation: fadeInUp 0.8s ease; 
+}
+
+.signin-form:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.signin-form label {
+    display: block;
+    font-size: 16px;
+    color: #e67e22; /* Warm, soft orange color */
+    font-family: 'Dancing Script', cursive; /* A unique, playful cursive font */
+    font-weight: bold;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.signin-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ffb347; /* Warm pastel orange border */
+    border-radius: 10px;
+    font-size: 16px; /* Animation effects */
+}
+
+.signin-form input:focus {
+    border-color: #e67e22; /* Focus color change */
+    box-shadow: 0px 3px 8px rgba(184, 29, 29, 0.1);
+}
+
+.signin-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #f39c12, #e67e22); /* Gradient effect */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.signin-button:hover {
+    transform: translateY(-3px) scale(1.04);
+    background: linear-gradient(90deg, #e67e22, #d35400);/* Lift effect on hover */
+}
+
+.signin-footer {
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+    font-size: 1.1rem; /* Slightly larger text */
+}
+
+.signin-footer a {
+    color: #FFD700; /* Yellow color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.signin-footer a:hover {
+    color: #FF4500; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}

@@ -1,0 +1,179 @@
+/* ProfileSection.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; 
+   /* Prevent scrolling */
+}
+
+.profile-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), #e4dedc53, rgba(255, 255, 255, 0.6));  /* Same background image */
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Dark text for contrast */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap for a tighter layout */
+    padding: 40px;
+    width: 300px;
+    overflow: hidden; 
+}
+
+/* Header styles */
+.profile-header {
+    display: flex;
+    align-items: center;
+    background-color: #f7f8fc;
+    justify-content: space-between;
+    padding: 20px; /* Increased padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+}
+
+.profile-header h1 {
+    font-size: 28px; /* Slightly larger font size */
+    color: #FF4500; /* Consistent color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+}
+
+/* Profile content styles */
+.profile-content {
+ /* Take remaining space */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center align items vertically */
+    text-align: center; /* Center text */
+}
+
+.profile-title {
+    font-size: 2.5rem; /* Larger font size for impact */
+    color: #ffcc00; /* Consistent heading color */
+    margin: 20px 0; /* Space around the title */
+    animation: slideIn 0.8s forwards; /* Animation */
+}
+
+.profile-description {
+    font-size: 1.5rem; /* Increased font size */
+    color: #2f3542; /* Dark gray for contrast */
+    max-width: 600px; /* Limit width for readability */
+    margin: 20px 0;
+    animation: slideIn 0.8s forwards 0.3s; /* Animation with delay */
+}
+
+/* Button styles */
+.profile-button {
+    padding: 12px 25px;
+    border-radius: 25px; /* More rounded for a sleek look */
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6a6a, #ffb74d); /* Gradient background */
+    box-shadow: 0 4px 10px rgba(111, 139, 197, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold; /* Bolder text */
+}
+
+.profile-button:hover {
+    transform: translateY(-3px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 15px rgba(111, 139, 197, 0.4);
+}
+
+/* Keyframes for slide-in animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Profile details */
+/* ProfileSection.css */
+
+/* Profile details */
+.profile-details {
+    background: linear-gradient(135deg, #f7f8fc, #e9eff2); /* Subtle gradient background */
+    padding: 40px; /* Space around the content */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+    width: 100%; /* Full width */
+    max-width: 800px; /* Limit max width for larger screens */
+    text-align: left; /* Align text to the left for better readability */
+    margin: 20px auto; /* Center the box */
+    position: relative; /* Enable positioning for pseudo-elements */
+    overflow: hidden; /* Hide overflow for pseudo-elements */
+}
+
+/* Eye-catching title */
+.profile-details h2 {
+    font-size: 2.0em; /* Larger font size for emphasis */
+    color: #ff6f61; /* Highlight color */
+    margin-bottom: 20px; /* Space below the title */
+    position: relative; /* For text shadow */
+    z-index: 1; /* Ensure the title is above pseudo-elements */
+}
+
+/* Create an underline effect for the title */
+.profile-details h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 5px;
+    background: #ffcc00; /* Underline color */
+    border-radius: 5px; /* Rounded edges */
+    transform: translateY(10px); /* Offset to create a slight gap */
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+
+
+/* Detail boxes */
+.detail-box {
+    display: flex; /* Align label and value in a row */
+    justify-content: space-between; /* Space out items */
+    padding: 10px 0; /* Vertical spacing */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle line between details */
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.detail-box:last-child {
+    border-bottom: none; /* Remove border from last detail */
+}
+
+/* Label styles */
+.detail-label {
+    font-weight: bold; /* Bold text for labels */
+    color: #2f3542; /* Darker color for contrast */
+    font-size: 0.9em; /* Slightly larger font */
+}
+
+/* Value styles */
+.detail-value {
+    color: #4a4a4a; /* Slightly muted color */
+    font-size: 0.8em; /* Consistent size with labels */
+}
+
+/* Hover effect for detail boxes */
+.detail-box:hover {
+    background: rgba(255, 204, 0, 0.1); /* Light highlight on hover */
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+/* Add some flair with rounded corners */
+.profile-details {
+    border-radius: 20px; /* More pronounced corners */
+}
+

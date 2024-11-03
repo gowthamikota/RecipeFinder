@@ -1,0 +1,100 @@
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/236x/94/4f/a4/944fa48d9947de0fe9d3e428ec66e99e.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.signup-form {
+    background:white; /* Soft light yellow background */
+    border: 3px solid #f39c12;
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 420px;
+    animation: fadeInUp 0.8s ease; 
+}
+
+/* Title */
+.signup-title {
+    text-align: center;
+    color: #ffb347; /* Warm amber color */
+    font-family: 'Pacifico', cursive; /* Adds a fun, inviting style */
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+.input-label {
+    display: block;
+    font-size: 16px;
+    color: #e67e22; /* Warm, soft orange color */
+    font-family: 'Dancing Script', cursive; /* A unique, playful cursive font */
+    font-weight: bold;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ffb347; /* Warm pastel orange border */
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* Placeholder Text */
+.input-field::placeholder {
+    color: #ffcc80; /* Soft pastel peach for a warm, welcoming touch */
+    font-style: italic;
+    opacity: 0.8; /* Adds subtlety */
+}
+
+/* Hover Effects */
+.input-field:focus {
+    border-color: #e67e22; /* Focus color change */
+    box-shadow: 0px 3px 8px rgba(184, 29, 29, 0.1);
+}
+
+/* Button */
+.signup-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #f39c12, #e67e22); /* Gradient effect */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.signup-button:hover {
+    transform: translateY(-3px) scale(1.04);
+    background: linear-gradient(90deg, #e67e22, #d35400); /* Darker gradient on hover */
+}
+
+/* Animation for Form Entrance */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
